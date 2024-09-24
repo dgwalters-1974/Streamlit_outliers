@@ -9,7 +9,7 @@ from datetime import datetime
 
 
 ### Create strip plot of all data highlighting anomalies
-def create_strip_plot(data, anomalies):
+def create_strip_plot(data, anomalies, y_title):
 
     stripdata_ii = pd.melt(data, ignore_index=True)
     stripdata = pd.melt(data, ignore_index=False)
@@ -38,7 +38,7 @@ def create_strip_plot(data, anomalies):
                               color='DarkSlateGray')),
         showlegend=False
     ))
-    fig.update_layout(xaxis_title = '', yaxis_title = '')
+    fig.update_layout(xaxis_title = '', yaxis_title = y_title)
     fig.update_layout(width=900, height=500)
     st.plotly_chart(fig)
 

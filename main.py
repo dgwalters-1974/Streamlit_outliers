@@ -188,7 +188,7 @@ if uploaded_file is not None:
         flag = f
 
     st.title('Outlier detection for swaps / fras')
-    st.subheader('An informal comparison of some traditional machine learning methods')
+    st.subheader('Comparison of some traditional machine learning methods...')
 
     try:
         is_outlier = data.index.sort_values()[-1] == summary.index.sort_values()[-1]
@@ -200,13 +200,14 @@ if uploaded_file is not None:
 
     col1, col2 = st.columns(2, gap="small")
     with col1:
-        functions.create_strip_plot(rates[flag].multiply(10000), summary_rates[flag].multiply(10000))
+        functions.create_strip_plot(rates[flag].multiply(10000), summary_rates[flag].multiply(10000), 'Daily Change (bps)')
     with col2:
-        functions.create_strip_plot(results, results.iloc[results.index.isin(summary.index)])
+        functions.create_strip_plot(results, results.iloc[results.index.isin(summary.index)], 'Normalized anomaly score')
 
 
     # x=data.sort_values(algo).head(10)
     # y=data.sort_index(ascending=False).iloc[0]
+    st.subheader("Daily changes for most recent data point (pink) and 10 largest anomaly scores (for selected algorithm)")
     functions.plot_anomal(data, algo, flag)
 
 
