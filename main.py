@@ -24,9 +24,8 @@ import warnings
 
 warnings.filterwarnings("ignore")
 
-import numpy as np
+
 from numpy import percentile
-import matplotlib.pyplot as plt
 import matplotlib.font_manager
 
 # Import all models
