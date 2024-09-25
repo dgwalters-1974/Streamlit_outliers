@@ -127,7 +127,7 @@ def import_and_run():
         inv_covmat = np.linalg.inv(cov)
         left = np.dot(y_mu, inv_covmat)
         mahal = np.dot(left, y_mu.T)
-        return mahal.diagonal()
+        return np.sqrt(mahal.diagonal())
 
     results['swaps'].sort_index(ascending=True)
     results_mahala_s = calculateMahalanobis(y=swaps, data=swaps[list(swaps.columns)])
