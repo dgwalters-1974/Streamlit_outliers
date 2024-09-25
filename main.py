@@ -196,18 +196,24 @@ if uploaded_file is not None:
     except:
         pass
 
+    st.subheader(f'Line plot of {chart_pick} rate showing outliers at {cutoff:.1%} contamination and latest value (pink)')    
+        
     functions.plot_results(rates.multiply(10000), summary_rates.multiply(10000), chart_pick)
 
+    
     col1, col2 = st.columns(2, gap="small")
     with col1:
+        st.write(f'Daily change by maturity showing outliers at {cutoff:.1%} contamination (navy) and latest value (pink)')
         functions.create_strip_plot(rates[flag].multiply(10000), summary_rates[flag].multiply(10000), 'Daily Change (bps)')
     with col2:
+        st.write(f'Rescaled ([0, 1]) anomaly scores showing outliers at {cutoff:.1%} contamination (navy) and latest value (pink)')
+         
         functions.create_strip_plot(results, results.iloc[results.index.isin(summary.index)], 'Normalized anomaly score')
 
 
     # x=data.sort_values(algo).head(10)
     # y=data.sort_index(ascending=False).iloc[0]
-    st.subheader("Daily changes for most recent data point (pink) and 10 largest anomaly scores (for selected algorithm)")
+    st.subheader("Daily changes for most recent data points (pink) and 10 largest anomaly scores (for selected algorithm)")
     functions.plot_anomal(data, algo, flag)
 
 
