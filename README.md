@@ -8,3 +8,9 @@ Daily financial time series data investigated for outliers with a selection of u
 <p align="center">
   <img src="/images//newplot.png" width="350" title="hover text">
 </p>
+
+<p float="left">
+  <img src="/images/newplot (1).png" width="100" />
+  <img src="/images/newplot (1).png" width="100"/> 
+  <img src="/images/newplot (1).png" width="100"/>
+</p>
