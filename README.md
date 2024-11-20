@@ -3,7 +3,7 @@
 Daily financial time series data investigated for outliers with a selection of unsupervised learning algorithms. The nature of the problem dictates that the number of anomalous points is governed by a contamination rate set by the user and determined by domain specific factors. Algorithms investigated include K=nearest neighbours, Isolation Forest, Mahalanobis distance and Support Vector Machines.
 
 <p align="center">
-  <img src="/images//newplot_.png" width="350" title="hover text">
+  <img src="/images//newplot_.png" width="700" title="hover text">
 </p>
 
 * Packages: Python , Matplotlib, Numpy, Pandas, Streamlit
