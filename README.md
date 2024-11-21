@@ -1,6 +1,6 @@
 # Streamlit app for detecting outliers in interest rate swaps / fra data
 
-Daily financial time series data investigated for outliers with a selection of unsupervised learning algorithms. The nature of the problem dictates that the number of anomalous points is governed by a contamination rate set by the user and determined by domain specific factors. Algorithms investigated include K=nearest neighbours, Isolation Forest, Mahalanobis distance and Support Vector Machines.
+Daily financial time series data investigated for outliers with a selection of unsupervised learning algorithms. The nature of the problem dictates that the number of anomalous points is governed by a contamination rate set by the user and determined by domain specific factors. Algorithms such as include K=nearest neighbours, Isolation Forest, Mahalanobis distance and Support Vector Machines were applied to the differenced data in order to categorize datapoints as normal / anomalous and the results were summarised in a Streamlit app.
 
 <p align="center">
   <img src="/images//newplot_.png" width="700" title="hover text">
@@ -16,7 +16,7 @@ Daily financial time series data investigated for outliers with a selection of u
 
 <p float="left">
   <img src="/images/newplot (1).png" width="250" />
-  <img src="/images/newplot (1).png" width="250"/> 
+  <img src="/images//newplot.png" width="250"/> 
   <img src="/images/newplot (1).png" width="250"/>
 </p>
 
