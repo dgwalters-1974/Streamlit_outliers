@@ -15,8 +15,8 @@ Daily financial time series data investigated for outliers with a selection of u
 </p>
 
 <p float="left">
-  <img src="/images/newplot (1).png" width="300" />
-  <img src="/images//newplot.png" width="300"/> 
+  <img src="/images/newplot (1).png" width="400" />
+  <img src="/images//newplot.png" width="400"/> 
   
 </p>
 
